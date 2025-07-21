@@ -1,0 +1,99 @@
+/* Estilo mejorado */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #e0f7fa);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #e53935;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 50px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  list-style: square inside;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #e53935;
+  padding-left: 15px;
+  color: #555;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+img.animated-img {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+img.animated-img:hover {
+  transform: scale(1.05);
+}
+
+/* Animaciones */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
